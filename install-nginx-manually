@@ -1,0 +1,5 @@
+#baraye nasb nginx in torye mirim jolo 
+
+
+./configure --sbin-path=/usr/bin/nginx --conf-path=/etc/nginx/nginx.conf --error-log=/var/log/nginx/error.log --http-log-path=/var/log/nginx/access.log --with-pcre 
+--pid-path=/var/run/nginx.pid --with-http-ssl-module # baraye nasb madules io ezafe mikonim --with-http-image-filter-module=dynamic --modules-path=/etc/nginx/modules 
