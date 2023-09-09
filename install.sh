@@ -25,8 +25,9 @@ sleep 2
 wget http://nginx.org/download/nginx-1.25.2.tar.gz
 wait
 tar -zxvf nginx-1.25*
+
 wait
-cd nginx-1.25*
+cd nginx-1.25.2
 sleep 1
 clear
 
