@@ -1,5 +1,5 @@
 #!/bin/bash
-
+clear
 echo "install and confing nginx manually:"
 sleep 2 
 clear
