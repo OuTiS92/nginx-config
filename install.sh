@@ -41,7 +41,10 @@ wait
 echo " insall Ok :) "
 sleep 3 
 clear
-
+make 
+wait 
+make install
+wait 
 systemctl status nginx
 
 
