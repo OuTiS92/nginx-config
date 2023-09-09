@@ -4,17 +4,17 @@ echo "install and confing nginx manually:"
 sleep 2 
 clear
 echo "wait ..... "
-sudo apt update 
+sudo apt update -y
 wait
-apt install pcre-devel 
+apt install pcre-devel -y  
 wait
-apt-get install libpcre3 libpcre3-dev
+apt-get install libpcre3 libpcre3-dev -y 
 wait
-apt-get install zlib1g-dev
+apt-get install zlib1g-dev -y 
 wait
-apt install libgd-dev
+apt install libgd-dev -y
 wait
-apt install libgd-dev
+apt install libgd-dev -y
 wait
 clear
 
