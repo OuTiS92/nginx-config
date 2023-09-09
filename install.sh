@@ -18,6 +18,8 @@ apt install libgd-dev -y
 wait
 apt-get install build-essential -y 
 wait
+apt install libssl-dev -y
+wait
 clear
 
 echo "soon install config nginx ...."
