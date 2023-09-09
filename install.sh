@@ -37,14 +37,31 @@ clear
 
 ./configure --sbin-path=/usr/bin/nginx --conf-path=/etc/nginx/nginx.conf --error-log-path=/var/log/nginx/error.log --http-log-path=/var/log/nginx/access.log --with-pcre --pid-path=/var/run/nginx.pid --with-http_ssl_module --with-http_image_filter_module=dynamic --modules-path=/etc/nginx/modules  --without-http_rewrite_module 
 wait 
-
-echo " insall Ok :) "
 sleep 3 
 clear
 make 
 wait 
 make install
 wait 
-systemctl status nginx
+echo " [Unit]
+Description=The NGINX HTTP and reverse proxy server
+After=syslog.target network.target remote-fs.target nss-lookup.target
+
+[Service]
+Type=forking
+PIDFile=/var/run/nginx.pid
+ExecStartPre=/usr/bin/nginx -t
+ExecStart=/usr/bin/nginx
+ExecReload=/usr/sbin/nginx -s reload
+ExecStop=/bin/kill -s QUIT $MAINPID
+PrivateTmp=true
+
+[Install]
+WantedBy=multi-user.target" >  /lib/systemd/system/nginx.service
+wait
+systemctl enable nginx
+systemctl start nginx
+echo " insall Ok :) "
+
 
 
