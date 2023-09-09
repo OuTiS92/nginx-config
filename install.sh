@@ -16,6 +16,8 @@ apt install libgd-dev -y
 wait
 apt install libgd-dev -y
 wait
+apt-get install build-essential -y 
+wait
 clear
 
 echo "soon install config nginx ...."
