@@ -44,6 +44,10 @@ make
 wait 
 make install
 wait 
+clear
+sleep 2
+echo "make services nginx ...."
+sleep 1 
 echo " [Unit]
 Description=The NGINX HTTP and reverse proxy server
 After=syslog.target network.target remote-fs.target nss-lookup.target
@@ -61,6 +65,7 @@ PrivateTmp=true
 WantedBy=multi-user.target" >  /lib/systemd/system/nginx.service
 wait
 systemctl enable nginx
+sleep 2
 systemctl start nginx
 echo " insall Ok :) "
 
