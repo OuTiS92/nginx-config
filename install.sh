@@ -1,4 +1,10 @@
 #!/bin/bash
+echo "wait for a few seconds ... "
+{
+  apt-get install fortune cowsay  -y 
+} &> /dev/null
+clear
+fortune | cowsay -f let's go to install .... 
 clear
 sleep 1
 echo " OuTiS ....  Version 0.1.1"
