@@ -1,6 +1,9 @@
 #!/bin/bash
 clear
+sleep 1
 echo " OuTiS ....  Version 0.1.1"
+sleep 1
+clear 
 echo "install and confing nginx manually:"
 sleep 2 
 clear
