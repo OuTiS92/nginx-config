@@ -4,7 +4,7 @@ echo "wait for a few seconds ... "
   apt-get install fortune cowsay  -y 
 } &> /dev/null
 clear
-fortune | cowsay -f lets go to install .... 
+cowsay -f  eyes "let's go to install ...." 
 
 sleep 3
 clear
