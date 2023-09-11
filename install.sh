@@ -5,6 +5,8 @@ echo "wait for a few seconds ... "
 } &> /dev/null
 clear
 fortune | cowsay -f lets go to install .... 
+
+sleep 3
 clear
 sleep 1
 echo " OuTiS ....  Version 0.1.1"
