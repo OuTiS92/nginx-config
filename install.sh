@@ -4,13 +4,9 @@ echo "wait for a few seconds ... "
   apt-get install fortune cowsay  -y 
 } &> /dev/null
 clear
-cowsay -f  eyes "let's go to install ...." 
+cowsay -f  eyes "OuTiS ....  Version 0.1.1 " 
 
 sleep 3
-clear
-sleep 1
-echo " OuTiS ....  Version 0.1.1"
-sleep 1
 clear 
 echo "install and confing nginx manually:"
 sleep 2 
