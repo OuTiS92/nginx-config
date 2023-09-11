@@ -7,22 +7,8 @@ clear
 echo "wait ..... "
 sudo apt update -y
 wait
-apt install pcre-devel -y  
-wait
-apt-get install libpcre3 libpcre3-dev -y 
-wait
-apt-get install zlib1g-dev -y 
-wait
-apt install libgd-dev -y
-wait
-apt install libgd-dev -y
-wait
-apt-get install build-essential -y 
-wait
-apt install libssl-dev -y
-wait
+apt install pcre-devel  libpcre3 libpcre3-dev zlib1g-dev  libgd-dev  build-essential  libssl-dev  -y  
 clear
-
 echo "soon install config nginx ...."
 sleep 2
 
@@ -67,7 +53,12 @@ wait
 systemctl enable nginx
 sleep 2
 systemctl start nginx
-echo " insall Ok :) "
+clear; for i in {0..10000..33} 10000;do i=0$i
+     printf -v p %0.2f ${i::-2}.${i: -2}
+     percentBar $p $((COLUMNS-7)) bar
+     printf '\r\e[47;30m%s\e[0m%6.2f%%' "$bar" $p
+     read -srt .002 _ && break
+done
 
 
 
