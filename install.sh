@@ -14,7 +14,7 @@ clear
 echo "wait ..... "
 sudo apt update -y
 wait
-apt install pcre-devel  libpcre3 libpcre3-dev zlib1g-dev  libgd-dev  build-essential  libssl-dev  -y  
+apt install gcc pcre-devel  libpcre3 libpcre3-dev zlib1g-dev  libgd-dev  build-essential build-essential  libssl-dev  -y  
 clear
 echo "soon install config nginx ...."
 sleep 2
