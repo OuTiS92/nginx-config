@@ -51,10 +51,6 @@ PrivateTmp=true
 
 [Install]
 WantedBy=multi-user.target" >  /lib/systemd/system/nginx.service
-wait
-systemctl enable nginx
-sleep 2
-systemctl start nginx
 percentBar ()  {
     local prct totlen=$((8*$2)) lastchar barstring blankstring;
     printf -v prct %.2f "$1"
