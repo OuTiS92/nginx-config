@@ -1,0 +1,46 @@
+in dastor ha baraye safe 404 or 500 ta mitonid autoindex or va ... estefade konid 
+
+
+
+
+# allow the contents of the /img folder to listed 
+
+location /img {
+	autoindex on ;
+	}
+
+
+
+--------------------------------------------------------------------------------
+
+
+
+# secify the page to server for 404 error 
+error_page 404 /file404 ro bedi besh 
+
+
+location =/404.html{
+ #only use this location for internal requests
+ internal
+ }
+
+
+
+----------------------------------------------------------------
+
+
+# for 500 
+
+error_page 500 502 503 504  /filename;
+
+
+location =/50x.html{
+
+#only use this page location for internal requests
+internal;
+}
+
+
+
+
+
