@@ -5,7 +5,6 @@ echo "wait for a few seconds ... "
 } &> /dev/null
 clear
 cowsay -f  eyes "OuTiS ....  Version 0.1.1 " 
-
 sleep 3
 clear 
 echo "install and confing nginx manually:"
@@ -18,17 +17,13 @@ apt install gcc   libpcre3 libpcre3-dev zlib1g-dev  libgd-dev  build-essential b
 clear
 echo "soon install config nginx ...."
 sleep 2
-
-
 wget http://nginx.org/download/nginx-1.25.2.tar.gz
 wait
 tar -zxvf nginx-1.25*
-
 wait
 cd nginx-1.25.2
 sleep 1
 clear
-
 ./configure --sbin-path=/usr/bin/nginx --conf-path=/etc/nginx/nginx.conf --error-log-path=/var/log/nginx/error.log --http-log-path=/var/log/nginx/access.log --with-pcre --pid-path=/var/run/nginx.pid --with-http_ssl_module --with-http_image_filter_module=dynamic --modules-path=/etc/nginx/modules  --without-http_proxy_module --without-http_rewrite_module --without-http_rewrite_module 
 wait 
 sleep 3 
