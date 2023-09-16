@@ -1,3 +1,16 @@
 openssl req -x509 -days 30  -nodes -newkey rsa:2048  -keyout /etc/nginx/ssl/self.key -out /etc/nginx/ssl/self.crt
 
 in dastor baraye gereftan ssl hast 
+
+
+bad mitoind ba in dastor eghdam  konid be on krdn ssl dar file nginx 
+
+server {
+    listen              443 ssl;
+    server_name         www.example.com;
+    ssl_certificate     www.example.com.crt;
+    ssl_certificate_key www.example.com.key;
+    ssl_protocols       TLSv1 TLSv1.1 TLSv1.2 TLSv1.3;
+    ssl_ciphers         HIGH:!aNULL:!MD5;
+    ...
+}
