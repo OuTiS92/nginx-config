@@ -6,16 +6,11 @@
         # Don't use them in a production server!
         #
         # include snippets/snakeoil.conf;
-
         root /var/www/html;
 
         # Add index.php to the list if you are using PHP
         index index.html index.htm index.php info.php  index.nginx-debian.html;
-
         server_name 185.126.6.251;
-
-
-
 
         location / {
                 # First attempt to serve request as file, then
