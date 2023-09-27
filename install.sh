@@ -11,7 +11,7 @@ echo "install and confing nginx manually:"
 sleep 2 
 clear
 echo "wait ..... "
-sudo apt update -y
+sudo apt update -y 
 wait
 apt install gcc   libpcre3 libpcre3-dev zlib1g-dev  libgd-dev  build-essential build-essential  libssl-dev  -y  
 clear
