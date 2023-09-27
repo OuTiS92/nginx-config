@@ -3,7 +3,7 @@ echo "wait for a few seconds ... "
 {
   apt-get install fortune cowsay  -y 
 } &> /dev/null
-clear
+clear 
 cowsay -f  eyes "OuTiS ....  Version 0.1.1 " 
 sleep 3
 clear 
