@@ -7,7 +7,7 @@ clear
 cowsay -f  eyes "OuTiS ....  Version 0.1.1 " 
 sleep 3
 clear 
-echo "install and confing nginx manually:"
+echo "install and confing nginx manually:" 
 sleep 2 
 clear
 echo "wait ..... "
