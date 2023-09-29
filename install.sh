@@ -1,4 +1,6 @@
 #!/bin/bash
+
+#install nginx web server 
 echo "wait for a few seconds ... "
 {
   apt-get install fortune cowsay  -y 
