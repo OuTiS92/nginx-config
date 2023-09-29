@@ -5,7 +5,7 @@ echo "wait for a few seconds ... "
 } &> /dev/null
 clear 
 cowsay -f  eyes "OuTiS ....  Version 0.1.1 " 
-sleep 3
+sleep 3 
 clear 
 echo "install and confing nginx manually:" 
 sleep 2 
