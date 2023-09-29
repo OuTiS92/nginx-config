@@ -9,7 +9,7 @@ sleep 3
 clear 
 echo "install and confing nginx manually:" 
 sleep 2 
-clear
+clear 
 echo "wait ..... "
 sudo apt update -y 
 wait
