@@ -70,6 +70,6 @@ for i in {0..10000..33} 10000;do i=0$i
     read -srt .002 _ && break    # console sleep avoiding fork
 done
         echo "\n"
-    echo "Install Done"
+    echo "Install Done :) "
 
 
